@@ -240,8 +240,7 @@ class CreateTitleDefault(object):
     def __call__(self, serializer_field):
         view = serializer_field.context['view']
         title_id = view.kwargs.get('title_id')
-        title = get_object_or_404(Title, pk=title_id)
-        return title
+        return get_object_or_404(Title, pk=title_id)
 
 
 class ReviewSerializer(serializers.ModelSerializer):
