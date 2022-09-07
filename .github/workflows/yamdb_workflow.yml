@@ -31,7 +31,7 @@ jobs:
           cd api_yamdb/
           python manage.py test
   build_and_push_2_dockerhub:
-  # building the "web" image and push it to DockerHub for pulling later
+  # building the "web" image and push it to DockerHub for pulling it later
     runs-on: ubuntu-20.04
 
     needs: tests
