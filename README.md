@@ -103,7 +103,7 @@ class GenreTitle(models.Model):
 ```Python
 GenreTitle.objects.get_or_create(title_id='1',genre_id='1')
 ```
-
+Адрес сервера для проверки работоспособности: http://51.250.95.19
 
 ## Авторы
 * Василиса Немоляева
