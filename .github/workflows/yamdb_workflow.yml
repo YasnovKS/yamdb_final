@@ -59,6 +59,7 @@ jobs:
   deploy:
     runs-on: ubuntu-20.04
     needs: build_and_push_2_dockerhub
+    if: github.ref == 'refs/heads/master'
     steps:
       - name: executing remote ssh commands to deploy
         uses: appleboy/ssh-action@master
